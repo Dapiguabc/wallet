@@ -46,6 +46,10 @@
 	}
 
 	const walletIsLockedListener = (message, sender, sendResponse) => {
+		// Go Home Page
+		if (message.type === 'resetWallet') {
+			switchPage('CoinsMain')
+		}
 		if (message.type === 'walletIsLocked') {
 			//Make sure the wallet was actually unlocked by the user
 			chrome.runtime.sendMessage({type: 'walletIsLocked'}, (locked) => {

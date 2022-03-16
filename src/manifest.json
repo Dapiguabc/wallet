@@ -6,7 +6,7 @@
     "page": "background.html"
   },
   "permissions":[
-    "storage", "tabs", "unlimitedStorage"
+    "storage", "tabs", "unlimitedStorage", "contextMenus"
   ],
   "browser_action": {
     "default_title": "Lamden Vault",
